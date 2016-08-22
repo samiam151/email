@@ -1,0 +1,27 @@
+@import "https://fonts.googleapis.com/css?family=Jaldi:400,700";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #25dff2;
+  font-family: 'Jaldi', sans-serif;
+  color: #eee;
+  padding: 3% 5%; }
+
+h3 {
+  font-weight: 700; }
+  h3::first-letter {
+    font-size: 1.1em; }
+
+.email {
+  margin-bottom: 2%;
+  background-color: #333;
+  padding: 2%;
+  border-radius: 5px; }
+
+.email_index {
+  color: #FFA726;
+  font-size: 1.1em; }
+
+/*# sourceMappingURL=style.css.map */
