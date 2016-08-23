@@ -16,7 +16,7 @@ class Email {
 
     public static function getEmail($id){
         self::init();
-        return self::$conn->query("SELECT * FROM emails WHERE message_id=$id")->fetch();
+        return self::$conn->query("SELECT * FROM emails WHERE id=$id")->fetch();
     }
 
     public static function createEmail(){
@@ -25,6 +25,6 @@ class Email {
 
     public static function deleteEmail($id){
         self::init();
-        self::$conn->exec("DELETE FROM emails WHERE message_id=$id");
+        self::$conn->exec("DELETE FROM emails WHERE id=$id");
     }
 }
