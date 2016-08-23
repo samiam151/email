@@ -1,6 +1,7 @@
 <?php
 
 class Database {
+    
     // specify database credentials
     private static $username = 'root';
     private static $password = "root";

@@ -1,7 +1,7 @@
 <!-- All E-mails -->
 <div ng-controller="InboxController">
     <!--Emails-->
-    <div class='email' ng-repeat="email in emails">
+    <div class='email' number='{{$index+1}}' ng-repeat="email in emails">
         <h3>Email # <span class='email_index' ng-bind='$index + 1'></span></h3>
         <p>From: <span ng-bind='email.from'></span></p>
         <p>To: <span ng-bind='email.to'></span></p>
@@ -9,6 +9,6 @@
         <p>Message: <span ng-bind='email.message'></span></p>
 
         <button><a ng-href='#inbox/{{email.message_id}}'>Read</a></button>
-        <button>Delete</button>
+        <button ng-click="deleteEmail(email.message_id)">Delete</button>
     </div>
 </div>
