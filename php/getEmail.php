@@ -5,10 +5,7 @@ require_once('db/Database.php');
 $id = (integer)(json_decode(file_get_contents("php://input"))->id);
 
 // Get the specific email
-$db = new Database();
-$conn = $db->getConnection();
-$results = $conn->query("SELECT * FROM emails WHERE message_id=$id")->fetch();
+$results = Email::getEmail($id);
 
 // Send the results back
 echo json_encode(['message' => $results]);
-

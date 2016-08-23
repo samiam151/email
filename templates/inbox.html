@@ -1,4 +1,4 @@
-<!-- E-mails -->
+<!-- All E-mails -->
 <div ng-controller="InboxController">
     <!--Emails-->
     <div class='email' ng-repeat="email in emails">
@@ -8,6 +8,7 @@
         <p>Date: <span ng-bind='email.date'></span></p>
         <p>Message: <span ng-bind='email.message'></span></p>
 
-        <button><a ng-href='#inbox/{{email.message_id}}'>Read</button>
+        <button><a ng-href='#inbox/{{email.message_id}}'>Read</a></button>
+        <button>Delete</button>
     </div>
 </div>

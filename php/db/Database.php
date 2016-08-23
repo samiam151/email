@@ -1,25 +1,23 @@
 <?php
 
-class Database
-{
+class Database {
     // specify database credentials
-    private $username = 'root';
-    private $password = "root";
-    private $host = "localhost:8889";
-    private $db_name = 'first-ng-php';
-    public $conn;
+    private static $username = 'root';
+    private static $password = "root";
+    private static $host = "localhost:8889";
+    private static $db_name = 'first-ng-php';
+    public static $conn;
 
     // retrieve the database connection 
-    public function getConnection()
-    {
+    public function getConnection(){
         try 
         {  
-            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            self::$conn = new PDO("mysql:host=" . self::$host . ";dbname=" . self::$db_name, self::$username, self::$password);
         } 
         catch(PDOException $exception)
         {
             echo "Connection Error: " . $exception->getMessage();
         }
-        return $this->conn;
+        return self::$conn;
     }
 }

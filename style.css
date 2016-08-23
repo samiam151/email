@@ -24,14 +24,16 @@ h3 {
   border-radius: 5px;
   box-shadow: -3px 0px 15px #076d77; }
   .email button {
+    display: inline-block;
     background-color: #FFA726;
-    padding: 3px 15px;
+    padding: 0px 15px;
     border-radius: 5px;
     border: none;
     font-weight: 700;
-    font-size: 1.1em;
-    letter-spacing: 0.15em;
-    margin-top: 5px; }
+    font-size: 0.97em;
+    letter-spacing: 0.11em;
+    margin-top: 5px;
+    margin-right: 15px; }
     .email button a {
       text-decoration: none; }
     .email button:hover {

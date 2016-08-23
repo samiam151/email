@@ -1,12 +1,8 @@
 <?php
-require_once('db/Database.php');
-header('Content-type: application/json');
+require_once('db/Email.php');
 
+// Get all emails
+$results = Email::getAllEmails();
 
-$db = new Database();
-$conn = $db->getConnection();
-$results = $conn->query('SELECT * FROM emails');
-$forJSON = $results->fetchAll();
-
-
-echo json_encode(['emails' => $forJSON]);
+// Send the results back
+echo json_encode(['emails' => $results]);

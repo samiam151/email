@@ -6,7 +6,7 @@ app.controller('InboxController', ['EmailService', '$scope', function(email, $sc
 
 app.controller('MessageController', ['EmailService', '$scope', '$routeParams', function(email, $scope, $routeParams){
     var id = $routeParams.id;
-    email.getMessage(id).then(function(res){
+    email.getEmail(id).then(function(res){
         console.log(res.data);
         $scope.message = res.data.message;
     });

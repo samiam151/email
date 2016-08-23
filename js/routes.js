@@ -1,6 +1,6 @@
 var app = angular.module('app', ['ngRoute']);
 
-app.config(function($routeProvider, $locationProvider){
+app.config(function($routeProvider){
     $routeProvider
         .when('/inbox', {
             templateUrl: 'templates/inbox.html'
@@ -12,5 +12,4 @@ app.config(function($routeProvider, $locationProvider){
             redirectTo: '/inbox',
             templateUrl: 'templates/inbox.html'
         });
-        // $locationProvider.html5Mode(true);
 });
