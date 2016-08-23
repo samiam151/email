@@ -1,11 +1,13 @@
 <!-- E-mails -->
 <div ng-controller="InboxController">
-<!--{{emails}}-->
+    <!--Emails-->
     <div class='email' ng-repeat="email in emails">
         <h3>Email # <span class='email_index' ng-bind='$index + 1'></span></h3>
         <p>From: <span ng-bind='email.from'></span></p>
         <p>To: <span ng-bind='email.to'></span></p>
         <p>Date: <span ng-bind='email.date'></span></p>
         <p>Message: <span ng-bind='email.message'></span></p>
+
+        <button><a ng-href='#inbox/{{email.message_id}}'>Read</button>
     </div>
 </div>

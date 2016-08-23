@@ -1,0 +1,9 @@
+<div ng-controller="MessageController">
+    <div class="email">
+        <h3 ng-bind="message.subject" class='message_subject'></h3>
+        <p>From: <span ng-bind='message.from'></span></p>
+        <p>To: <span ng-bind='message.to'></span></p>
+        <p>Date: <span ng-bind='message.date'></span></p>
+        <p>Message: <span ng-bind='message.message'></span></p>
+    </div>
+</div>

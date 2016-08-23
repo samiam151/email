@@ -10,3 +10,4 @@ Thumbs.db
 *.scss.map
 .sass-cache
 *.css.map
+*.css
