@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Email</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     
+    <!--Header-->
+    <!--<header></header>-->
 
-    <!-- Views Go Here -->
-    <ng-view></ng-view>
+    <div class="row">
+        <!--Sidebar-->
+        <div class="sideBar">
+            <div class="sideBarContainer">
+                <ul>
+                    <li>Inbox</li>
+                    <li>Sent</li>
+                    <li>Drafts</li>
+                    <li>Compose</li>
+                    <li>Trash</li>
+                </ul>
+            </div>
+        </div>
 
+        <!-- Views Go Here -->
+        <ng-view class='main_view'></ng-view>
+    </div>
+    
+
+    <!-- Add Email Button -->
+    <div class="addEmailButton"></div>
 
     <!--Libs-->
     <script type='text/javascript' src='libs/angular.min.js'></script>

@@ -6,9 +6,8 @@
     </div>
 
     <div class='email' number='{{$index+1}}' ng-repeat="email in emails">
-        <h3>Subject: <span class='email_index' ng-bind='email.subject'></span></h3>
+        <h3><span class='email_index' ng-bind='email.subject'></span></h3>
         <p>From: <span ng-bind='email.from'></span></p>
-        <p>To: <span ng-bind='email.to'></span></p>
         <p>Date: <span ng-bind='email.date'></span></p>
         <p>Message: <span ng-bind='email.message'></span></p>
 

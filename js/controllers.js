@@ -11,7 +11,7 @@ app.controller('InboxController', ['EmailService', '$scope', function(email, $sc
         $scope.emails.splice(index, 1);
         
         // Delete email in database
-        email.deleteEmail(selectedEmail.id);  
+        // email.deleteEmail(selectedEmail.id);  
     };
 }]);
 
